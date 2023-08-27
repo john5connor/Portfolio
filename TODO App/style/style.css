@@ -1,0 +1,110 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, rgb(123, 122, 122), rgb(245, 47, 47));
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 80%;
+    height: 100%;
+}
+
+.input__container {
+    display: flex;
+    justify-content: center;
+}
+
+.task__input::placeholder {
+    color: rgb(221, 210, 210);
+    font-family: monospace;
+}
+
+.item__container {
+    display: flex;
+    justify-content: left;
+    flex-direction:column;
+    width: 60%;
+    height: 20%;
+    margin: 15px;
+    padding: 5px;
+}
+
+.item__element {
+    display: flex;
+    border: 1px solid rgb(221, 210, 210);
+    border-radius: 10px;
+    width: 100%;
+    margin: 5px;
+    background-color:rgb(52, 51, 51);
+}
+
+.task__element {
+    color: rgb(221, 210, 210);
+    font-family: monospace;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.button__container{
+    display: flex;
+    width: 60%;
+    justify-content: right;
+    align-items: center;
+}
+
+.button {
+    transition-duration: 0.2s;
+    margin-right: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 16px;
+    font-family: monospace;
+    background-color: rgb(221, 210, 210);
+}
+
+
+#edit:hover, #complete:hover, #delete:hover {
+    padding: 10px;
+    background-color: white;
+}
+
+#add {
+    margin-left: 5px;
+}
+#add:hover {
+    background-color: white;
+}
+
+.task__input{
+    background-color:rgb(52, 51, 51);
+    color: rgb(221, 210, 210);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+#task-label {
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: 600;
+}
